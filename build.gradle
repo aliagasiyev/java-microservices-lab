@@ -24,6 +24,13 @@ dependencies {
 
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
+    implementation 'com.zaxxer:HikariCP:5.1.0'
+
+    // JDBC sürücüsü (məsələn, PostgreSQL üçün)
+    implementation 'org.postgresql:postgresql:42.7.3'
+
+    // Test üçün (əgər istəsən)
+    testImplementation 'junit:junit:4.13.2'
 
     runtimeOnly 'com.h2database:h2'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'

@@ -25,5 +25,10 @@ public abstract class JavaMicroservicesLabApplication implements CommandLineRunn
         student.setLastName("Smith");
         entityManager.persist(student);
     }
+
+    //(JPA)-> (Hibernate)Session ->(Hibernate)SessionImpl
+    //(JPA)-> (Hibernate)SessionFactory
+    //ConnectionPool
+    //(Open)Session->(Acquire)Connection(POOL) ->DB
 }
 
